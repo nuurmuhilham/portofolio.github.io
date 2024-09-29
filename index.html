@@ -1,0 +1,457 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - DevFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for skills animation -->
+<style>
+  .skills-list {
+  display: flex;
+  flex-wrap: nowrap; /* Pastikan item skill membungkus jika ruang horizontal tidak cukup */
+  justify-content: space-between; /* Menjaga jarak antara setiap item secara merata */
+  /* overflow: visible; Pastikan tidak menyembunyikan konten di luar batas */
+  max-width: 100%;
+  padding-left: 10px;
+ }
+
+ .skill-item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px; /* Memberikan jarak antara setiap gambar */
+ }
+
+  .skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  /* Animasi bolak-balik dari kiri ke kanan */
+  @keyframes scrollSkills {
+    0% {
+      transform: translateX(0); /* Awal di kiri kontainer */
+    }
+    50% {
+      transform: translateX(calc(15%)); /* Bergerak ke kanan */
+    }
+    100% {
+      transform: translateX(0); /* Kembali ke kiri */
+    }
+  }
+
+  /* Penerapan animasi */
+  .skills-list {
+    animation: scrollSkills 15s ease-in-out infinite; /* Pergerakan yang bolak-balik */
+  }
+</style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Welcome to My Web Portfolio!</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="img/hero-img.jpg" alt="" data-aos="fade-in">
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Nuur Muhammad Ilham</h2>
+        <p><span class="typed" data-typed-items="Data Enthusiast"></span></p>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="img/profile-img.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Nuur Muhammad Ilham</span></p>
+                <p><strong>Profile: </strong> <span>Data Antusias</span></p>
+                <p><strong>Email: </strong> <span>nuurmuhilham@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>(+62) 823-2333-2305</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+              <h5>Skills</h5>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                  <p>Python</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL">
+                  <p>SQL</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://www.tableau.com/sites/default/files/2021-05/tableau_rgb_500x104.png" alt="Tableau">
+                  <p>Tableau</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Looker.svg" alt="Google Looker">
+                  <p>Google Looker</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://nyesteventuretech.com/images/Machine-Learning.jpg" alt="Machine Learning">
+                  <p>Machine Learning</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://user-images.githubusercontent.com/315810/92159303-30d41100-edfb-11ea-8107-1c5352202571.png" alt="Seaborn" style="width: auto; height: 80px; display: block;">
+                  <p>Seaborn</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/2048px-Created_with_Matplotlib-logo.svg.png" alt="Matplotlib">
+                  <p>Matplotlib</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+                  <p>Scikit-learn</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Colaboratory_SVG_Logo.svg/2560px-Google_Colaboratory_SVG_Logo.svg.png" alt="Google Colab">
+                  <p>Google Colab</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://spark.apache.org/images/spark-logo-trademark.png" alt="PySpark">
+                  <p>PySpark</p>
+                </div>
+                <div class="skill-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                  <p>GitHub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                Data science enthusiast with a Bachelor's in Electrical Engineering, currently enhancing skills in Python, SQL, data analysis, and machine learning through professional training. Over one year of experience as a finance manager in the Tourism and Travel Industry, complemented by internships in electrical engineering and administration. Seeking opportunities to apply newly acquired data skills in a professional setting. Strong problem-solver with excellent communication and teamwork abilities. Adaptable and eager to learn, with interests in data science, data analysis, project management, and business development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+<!-- Resume Section -->
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>My resume highlights a solid foundation in data science, machine learning, and actuarial science.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row">
+      
+      <!-- Left Column: Summary, Education, Organisation -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Nuur Muhammad Ilham</h4>
+          <p><em>Unlocking New Opportunities in Data Science.</em></p>
+          <ul>
+            <li>Jakarta, Indonesia</li>
+            <li>(+62) 823-2333-2305</li>
+            <li>nuurmuhilham@gmail.com</li>
+          </ul>
+        </div><!-- End Summary -->
+
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>Bachelor of Electrical Engineering</h4>
+          <h5>2016 - 2020</h5>
+          <p><em>PLN Institute of Technology, Jakarta, Indonesia</em></p>
+          <p>Organised training to prepare students for university-level Olympiads, providing tutoring and organising tryouts.</p>
+          <p>Led career days to prepare students for the world of work.</p>
+          <p>Supervised and participated in the teaching school movement that provides learning to local children.</p>
+        </div><!-- End Education -->
+
+        <h3 class="resume-title">Organisation</h3>
+        <div class="resume-item">
+          <h4>Student Executive Organisation</h4>
+          <h5>2017 - 2018</h5>
+          <p><em>Staff of the Ministry of Education</em></p>
+          <p>Organised training and events to support students’ educational and career preparation.</p>
+        </div><!-- End Organisation -->
+      </div><!-- End Left Column -->
+
+      <!-- Right Column: Experience -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="resume-title">Experience</h3>
+
+        <div class="resume-item">
+          <h4>Purwadhika Digital School</h4>
+          <h5>2024 - Present</h5>
+          <p><em>Jakarta Selatan, Jakarta, Indonesia</em></p>
+          <ul>
+            <li>Developed a management application for a car rental business that facilitates data management.</li>
+            <li>Performed batch analysis on a superstore's data, resulting in more effective retention strategies.</li>
+            <li>Analysed superstore data for customer segmentation, campaign effectiveness, and new customer sign-up trends.</li>
+            <li>Conducted RFMTC analysis for supermarket customer segmentation, leading to marketing and retention recommendations.</li>
+          </ul>
+        </div><!-- End Experience Item -->
+
+        <div class="resume-item">
+          <h4>PT. Mitra Rahma Utama</h4>
+          <h5>2021 - 2023</h5>
+          <p><em>Parepare, Sulawesi Selatan, Indonesia</em></p>
+          <ul>
+            <li>Focused on financial recording and reporting, including management of financial statements, audits, and taxes.</li>
+            <li>Oversaw the implementation of financial policies and ensured compliance with accounting standards.</li>
+          </ul>
+        </div><!-- End Experience Item -->
+
+      </div><!-- End Right Column -->
+
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+
+</section><!-- /Resume Section -->
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Explore My Projects: A Journey of Innovation and Expertise</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">Article</li>
+        <li data-filter=".filter-product">Project</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Tabulate goes under Article (filter-app) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="img/portfolio/app-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Tabulate</h4>
+            <p>Create a Neat and Elegant Table</p>
+            <a href="img/portfolio/app-2.jpg" title="Tabulate: Create a Neat and Elegant Table" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://medium.com/@nuurmuhilham/tabulate-cara-mudah-untuk-presentasi-data-yang-rapi-dan-elegan-di-python-9b7c97deb70c" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- The rest of the items go under Project (filter-product) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="img/portfolio/app-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>CRUD for Car Rental</h4>
+            <p>An innovative Car Rental Management System developed in Python, offering seamless CRUD operations for efficient vehicle management and streamlined rental processes</p>
+            <a href="img/portfolio/app-1.jpg" title="CRUD (Create, Read, Update, Delete) for Car Rental" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/nuurmuhilham/Capstone_1_CRUD_Program" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="img/portfolio/product-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Cohort Retention Analysis</h4>
+            <p>Unlock valuable insights into customer purchasing patterns and loyalty at Giant Supermarket, driving data-driven strategies for enhanced customer retention and optimized sales performance.</p>
+            <a href="img/portfolio/product-1.jpg" title="Cohort Retention Analysis" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://colab.research.google.com/drive/15tnmDpLUc3HuEUz_R41uIergYTVON_qR?usp=sharing" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="img/portfolio/books-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Gold Price Forecasting Using Machine Learning</h4>
+            <p>Discover the future of gold price trends with advanced machine learning models. By leveraging historical data and predictive algorithms, this approach provides accurate forecasts, empowering investors and businesses to make informed decisions in a dynamic market</p>
+            <a href="img/portfolio/books-1.jpg" title="Gold Price Forecasting Using Machine Learning" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://colab.research.google.com/drive/1IgrtEY7zN0nZnpxAlKcfFkVDhbIWJgcx?usp=sharing" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="img/portfolio/product-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>RFMTC Online Retail</h4>
+            <p>Unveiled customer lifetime value through comprehensive insights derived from advanced RFMTC analysis, driving strategic decision-making and maximizing long-term profitability.</p>
+            <a href="img/portfolio/product-2.jpg" title="RFMTC (Recency, Frequency, Monetary, Time, Churn) Online Retail" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://colab.research.google.com/drive/1yTU90I785PDPJHb7AAL0nOButyK6uQCy?usp=sharing#scrollTo=e7b20b87-0089-4380-8a8d-1a5f163048d8" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="img/portfolio/app-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Supermarket Customer Analysis</h4>
+            <p>Analyzed the effectiveness of supermarket marketing campaigns using RFM segmentation, while uncovering customer registration trends to optimize acquisition strategies and enhance campaign impact.</p>
+            <a href="img/portfolio/app-3.jpg" title="Supermarket Customer Analysis" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/nuurmuhilham/Capstone-2_Superstore-Customers" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="img/portfolio/product-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Bank Customer Classification Prediction</h4>
+            <p>Predict the likelihood of bank customers making a deposit with cutting-edge classification models, enabling targeted marketing strategies and optimized resource allocation for greater financial outcomes.</p>
+            <a href="img/portfolio/product-3.jpg" title="Bank Customer Classification Prediction" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/nuurmuhilham/Capstone-3-Classification-Prediction-Model" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Let's Connect!</h2>
+        <p>I would love to hear from you. Here’s how you can reach me:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Find me in the heart of </h3>
+                  <p>Jakarta, Indonesia</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Give me a call </h3>
+                  <p>(+62) 823 2333 2305</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Drop me an email at</h3>
+                  <p>nuurmuhilham@.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/nuurmuhilham" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/enemi1198" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/nuurmuhilham?igsh=NXYxcTYzN2UwMmZy&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nuur-muhammad-ilham-enemi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+    
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
