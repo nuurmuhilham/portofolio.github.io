@@ -28,31 +28,29 @@
 
   <!-- Custom CSS for skills animation -->
 <style>
-  .skills-list {
+.skills-list {
   display: flex;
-  flex-wrap: nowrap; /* Pastikan item skill membungkus jika ruang horizontal tidak cukup */
-  justify-content: space-between; /* Menjaga jarak antara setiap item secara merata */
-  /* overflow: visible; Pastikan tidak menyembunyikan konten di luar batas */
+  flex-wrap: wrap; /* Membungkus item jika ruang horizontal tidak cukup */
+  justify-content: center; /* Menjaga gambar tetap rata tengah */
   max-width: 100%;
-  padding-left: 10px;
- }
+  padding: 10px;
+  gap: 20px; /* Jarak antar gambar */
+}
 
- .skill-item {
-  display: inline-block;
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Rata tengah secara vertikal */
   text-align: center;
-  margin-right: 30px; /* Memberikan jarak antara setiap gambar */
- }
+}
 
-  .skill-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-  }
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 5px; /* Jarak antara gambar dan teks */
+}
 
-  /* Penerapan animasi */
-  .skills-list {
-    animation: scrollSkills 15s ease-in-out infinite; /* Pergerakan yang bolak-balik */
-  }
 </style>
 </head>
 
