@@ -28,29 +28,31 @@
 
   <!-- Custom CSS for skills animation -->
 <style>
-.skills-list {
-  display: flex;
-  flex-wrap: wrap; /* Membungkus item jika ruang horizontal tidak cukup */
-  justify-content: center; /* Menjaga gambar tetap rata tengah */
-  max-width: 100%;
-  padding: 10px;
-  gap: 20px; /* Jarak antar gambar */
-}
+  .skills-list {
+      display: flex;
+      flex-wrap: wrap; /* Membungkus item jika ruang horizontal tidak cukup */
+      justify-content: center; /* Menjaga gambar tetap rata tengah */
+      gap: 20px; /* Jarak antar item */
+    }
 
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Rata tengah secara vertikal */
-  text-align: center;
-}
+    .skills-list.vertical {
+      flex-direction: column; /* Menyusun item secara vertikal */
+      align-items: center; /* Rata tengah secara horizontal */
+    }
 
-.skill-item img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 5px; /* Jarak antara gambar dan teks */
-}
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Rata tengah konten dalam item */
+      text-align: center;
+    }
 
+    .skill-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 5px; /* Jarak antara gambar dan teks */
+    }
 </style>
 </head>
 
@@ -103,52 +105,51 @@
               </div>
             </div>
 
-            <div class="skills-content skills-animation">
-              <h5>Skills</h5>
-              <div class="skills-list">
-                <div class="skill-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
-                  <p>Python</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL">
-                  <p>SQL</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://www.tableau.com/sites/default/files/2021-05/tableau_rgb_500x104.png" alt="Tableau">
-                  <p>Tableau</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Looker.svg" alt="Google Looker">
-                  <p>Google Looker</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://nyesteventuretech.com/images/Machine-Learning.jpg" alt="Machine Learning">
-                  <p>Machine Learning</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://user-images.githubusercontent.com/315810/92159303-30d41100-edfb-11ea-8107-1c5352202571.png" alt="Seaborn" style="width: auto; height: 80px; display: block;">
-                  <p>Seaborn</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/2048px-Created_with_Matplotlib-logo.svg.png" alt="Matplotlib">
-                  <p>Matplotlib</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
-                  <p>Scikit-learn</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Colaboratory_SVG_Logo.svg/2560px-Google_Colaboratory_SVG_Logo.svg.png" alt="Google Colab">
-                  <p>Google Colab</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://spark.apache.org/images/spark-logo-trademark.png" alt="PySpark">
-                  <p>PySpark</p>
-                </div>
-                <div class="skill-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-                  <p>GitHub</p>
+             <section id="skills" class="skills section">
+              <div class="container">
+              <h5 class="text-center">Skills</h5>
+      
+              <!-- Bagian skill lainnya -->
+      <div class="skills-list">
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL">
+          <p>SQL</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://www.tableau.com/sites/default/files/2021-05/tableau_rgb_500x104.png" alt="Tableau">
+          <p>Tableau</p>
+        </div>
+      </div>
+
+      <!-- Bagian skill yang ingin disusun secara vertikal -->
+      <div class="skills-list vertical">
+        <div class="skill-item">
+          <img src="https://user-images.githubusercontent.com/315810/92159303-30d41100-edfb-11ea-8107-1c5352202571.png" alt="Seaborn">
+          <p>Seaborn</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/2048px-Created_with_Matplotlib-logo.svg.png" alt="Matplotlib">
+          <p>Matplotlib</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+          <p>Scikit-learn</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Colaboratory_SVG_Logo.svg/2560px-Google_Colaboratory_SVG_Logo.svg.png" alt="Google Colab">
+          <p>Google Colab</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://spark.apache.org/images/spark-logo-trademark.png" alt="PySpark">
+          <p>PySpark</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+          <p>GitHub</p>
                 </div>
               </div>
             </div>
