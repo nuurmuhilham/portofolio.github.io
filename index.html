@@ -28,16 +28,11 @@
 
   <!-- Custom CSS for skills animation -->
 <style>
-  .skills-list {
+    .skills-list {
       display: flex;
-      flex-wrap: wrap; /* Membungkus item jika ruang horizontal tidak cukup */
-      justify-content: center; /* Menjaga gambar tetap rata tengah */
+      flex-wrap: wrap; /* Membungkus item ke baris baru jika ruang horizontal tidak cukup */
+      justify-content: center; /* Rata tengah semua item */
       gap: 20px; /* Jarak antar item */
-    }
-
-    .skills-list.vertical {
-      flex-direction: column; /* Menyusun item secara vertikal */
-      align-items: center; /* Rata tengah secara horizontal */
     }
 
     .skill-item {
@@ -125,8 +120,8 @@
         </div>
       </div>
 
-      <!-- Bagian skill yang ingin disusun secara vertikal -->
-      <div class="skills-list vertical">
+      <!-- Bagian skill -->
+      <div class="skills-list">
         <div class="skill-item">
           <img src="https://user-images.githubusercontent.com/315810/92159303-30d41100-edfb-11ea-8107-1c5352202571.png" alt="Seaborn">
           <p>Seaborn</p>
