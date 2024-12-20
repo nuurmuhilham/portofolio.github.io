@@ -49,19 +49,6 @@
     object-fit: contain;
   }
 
-  /* Animasi bolak-balik dari kiri ke kanan */
-  @keyframes scrollSkills {
-    0% {
-      transform: translateX(0); /* Awal di kiri kontainer */
-    }
-    50% {
-      transform: translateX(calc(15%)); /* Bergerak ke kanan */
-    }
-    100% {
-      transform: translateX(0); /* Kembali ke kiri */
-    }
-  }
-
   /* Penerapan animasi */
   .skills-list {
     animation: scrollSkills 15s ease-in-out infinite; /* Pergerakan yang bolak-balik */
